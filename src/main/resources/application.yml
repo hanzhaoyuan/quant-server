@@ -7,6 +7,11 @@ spring:
   application:
     name: quant-server
 
+  # Spring MVC 配置 (解决 Swagger 与 Spring Boot 2.6+ 的兼容性问题)
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
   # PostgreSQL 数据库配置
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
