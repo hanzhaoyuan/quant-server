@@ -3,6 +3,7 @@ package com.quant.server;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * 量化平台后端服务启动类
@@ -11,6 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @since 2024-01-01
  */
 @SpringBootApplication
+@EnableScheduling
 @MapperScan("com.quant.server.mapper")
 public class QuantServerApplication {
 

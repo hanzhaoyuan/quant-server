@@ -107,3 +107,8 @@ springfox:
   documentation:
     swagger-ui:
       enabled: true
+
+# 指标服务配置
+indicator:
+  service:
+
